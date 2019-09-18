@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Sourcesanspro';
+  src: url(sourcesanspro-regular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sourcesanspro';
+  src: url(sourcesanspro-bold.woff) format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+

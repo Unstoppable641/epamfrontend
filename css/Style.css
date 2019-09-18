@@ -1,0 +1,199 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.main {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    padding: 10px;
+    background-color: #77ced9;
+    color: white;
+    font-family: 'Sourcesanspro';
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.header-sort {
+    background-color: #1A9CB0;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 2px 0px 0px 2px;
+}
+
+.sort-select {
+    font-size: 16px;
+    border: none;
+    color: #1A9CB0;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 16px;
+    padding: 0px 2px 1px;
+}
+
+.users__block {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Sourcesanspro';
+    font-weight: normal;
+}
+
+.user {
+    width: 105px;
+    height: 150px;
+    margin: 5px;
+    display: inline-block;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border: 3px solid white;
+}
+
+.user:hover {
+    border: 3px solid #C9DC53;
+    transition: 0.3s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.user_img {
+    width: 82px;
+    border-radius: 50px;
+}
+
+.user_name {
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal_content {
+    position: relative;
+    margin: 10% auto;
+    padding: 15px;
+    border: 1px solid;
+    width: 26%;
+    background-color: #1A9CB0;
+    border-color: #C9DC53;
+    border-radius: 10px;
+    color: white;
+}
+
+.close {
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal_content img {
+    width: 200px;
+    height: 200px;
+    margin: 5px 53px;
+}
+
+.user_info_and_pict {
+    display: inline-block;
+    margin-left: 53px;
+    font-size: 19px;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .modal_content img {
+    width: 150px;
+    height: 150px;
+    margin: 5px 53px;
+  }
+
+  .modal_content {
+    width: 33%;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 605px;
+  }
+
+  .modal_content {
+    width: 44%;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 375px;
+  }
+
+  .modal_content {
+    width: 78%;
+  }
+
+}
